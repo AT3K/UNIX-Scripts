@@ -20,9 +20,13 @@ The script requires the following tools:
 These tools are usually pre-installed on most Unix-like systems. If not, you can install them as follows:
 
 - **Ubuntu/Debian**:
-  - `sudo apt install bash findutils coreutils`
+```
+sudo apt install bash findutils coreutils
+```
 - **CentOS/RHEL**:
-  - `sudo yum install bash findutils coreutils`
+```
+sudo yum install bash findutils coreutils
+```
 - **macOS**: 
   - Pre-installed
 
@@ -37,13 +41,7 @@ Make sure you have sufficient permissions to read from the source directory and 
 
 ## Usage 🚀
 
-1. **Navigate to the Script Directory**
-
-   ```sh
-   cd UNIX-Scripts/hardlink_sync
-   ```
-
-2. **Make the Script Executable**
+1. **Make the Script Executable**
 
    ```sh
    chmod +x hardlink_sync.sh
@@ -68,4 +66,34 @@ Example:
 ```bash
 SOURCE_DIR="/path/to/source"
 DEST_DIR="/path/to/destination"
+```
+
+## Script Output
+
+### When Hard Links Are Created:
+```
+🌟 Starting the Hard Link Process... 🌟
+
+🔄 Processed 10 of 10 files (Skipped: 9)
+
+🎉 Process Completed! 🎉
+
+📁 Total hard links created: 1
+
+📂 Hard linked files:
+  - test.txt
+
+🗂️ Total duplicate files skipped 9
+```
+### When No Hard Links Are Created:
+```
+🌟 Starting the Hard Link Process... 🌟
+
+🔄 Processed 10 of 10 files (Skipped: 10)
+
+🎉 Process Completed! 🎉
+
+🚫 No hard links were created.
+
+🗂️ Total duplicate files skipped: 10
 ```
