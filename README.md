@@ -8,6 +8,23 @@
 - **System Automation** 🤖: Automate repetitive tasks and streamline processes.
 - **Versatility** 🔄: Adaptable scripts suited for a range of use cases.
 
+## Downloading the Scripts 📥
+
+To download the scripts, follow these steps: 
+
+> [!NOTE]
+> This will download the entire repository. Once you have downloaded it, navigate to the specific script folder you want to use. Each script has its own README.md with further instructions.
+
+1. **Clone the Repository**
+```
+git clone https://github.com/AT3K/UNIX-Scripts.git
+```
+2.	Navigate to the Desired Script Directory
+```
+cd UNIX-Scripts/<script-directory>
+```
+Replace <script-directory> with the directory of the script you want to use. Each script has its own README.md file with setup instructions.
+
 ## License 📜
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
