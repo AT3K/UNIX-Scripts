@@ -2,8 +2,8 @@
 
 # Define the source and destination directories.
 # Replace (Source) and (Dest) with actual directory paths.
-SOURCE_DIR="(SOURCE_DIR)"
-DEST_DIR="(DEST_DIR)"
+SOURCE_DIR="/path/to/source"
+DEST_DIR="/path/to/destination"
 
 # Initialize counters for tracking the number of links created and skipped.
 link_count=0
