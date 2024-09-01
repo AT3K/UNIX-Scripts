@@ -1,38 +1,71 @@
-# Hardlink Sync
+# Hardlink Sync 🛠️
 
-## Description
+`Hardlink Sync` is a Bash script designed to create hard links between files in a source directory and a destination directory. The script ensures that files are synchronized by creating hard links where files are identical and skipping files that are already present and identical in the destination directory.
 
-`Hardlink Sync` is a script designed to create hard links between files in a source directory and a destination directory. It synchronizes files by creating hard links where files are identical and skips files that are already present and identical in the destination directory.
+## Features ✨
 
-## Features
+- **Hard Linking** 🔗: Creates hard links from a source directory to a destination directory.
+- **Duplicate Detection** 🔍: Skips files that are already present and identical in the destination directory.
+- **Progress Reporting** 📊: Provides detailed progress and status updates during execution.
 
-- Creates hard links from a source directory to a destination directory.
-- Skips files that are already present and identical in the destination directory.
-- Reports the number of links created and files skipped.
+## Requirements 📦
 
-## Usage
+The script requires the following tools:
 
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/AT3K/UNIX-Scripts.git
-    ```
+- **Bash**: Typically pre-installed on Unix-like systems.
+- **find**: To locate files and directories.
+- **ln**: For creating hard links.
+- **cmp**: To compare files.
 
-2. Navigate to the repository directory:
-    ```sh
-    cd UNIX-Scripts/hardlink_sync
-    ```
+These tools are usually pre-installed on most Unix-like systems. If not, you can install them as follows:
 
-3. Make the script executable:
-    ```sh
-    chmod +x hardlink_sync.sh
-    ```
+- **Ubuntu/Debian**:
+  - `sudo apt install bash findutils coreutils`
+- **CentOS/RHEL**:
+  - `sudo yum install bash findutils coreutils`
+- **macOS**: 
+  - Pre-installed
 
-4. Run the script:
-    ```sh
-    ./hardlink_sync.sh
-    ```
+## Permissions 🔐
 
-## Configuration
+Ensure you have the necessary permissions to:
 
-Update the `SOURCE_DIR` and `DEST_DIR` variables in the `hardlink_sync.sh` script to point to your source and destination directories.
+- **Read** 👁️: Access files in the source directory.
+- **Write** 📝: Create files and directories in the destination directory.
 
+Make sure you have sufficient permissions to read from the source directory and write to the destination directory for the script to function correctly.
+
+## Usage 🚀
+
+1. **Navigate to the Script Directory**
+
+   ```sh
+   cd UNIX-Scripts/hardlink_sync
+   ```
+
+2. **Make the Script Executable**
+
+   ```sh
+   chmod +x hardlink_sync.sh
+   ```
+
+3. **Edit the Configuration**
+
+   Open the `hardlink_sync.sh` script and update the `SOURCE_DIR` and `DEST_DIR` variables to specify your source and destination directories.
+
+4. **Run the Script**
+
+   ```sh
+   ./hardlink_sync.sh
+   ```
+
+## Configuration ⚙️
+
+- **SOURCE_DIR**: Set this variable to the path of the source directory containing the files you want to link.
+- **DEST_DIR**: Set this variable to the path of the destination directory where the hard links will be created.
+
+Example:
+```bash
+SOURCE_DIR="/path/to/source"
+DEST_DIR="/path/to/destination"
+```
