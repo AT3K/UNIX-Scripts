@@ -9,7 +9,7 @@
 - [Usage 🚀](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#usage-)
 - [Configuration ⚙️](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#configuration-)
 - [Script Output 📄](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#script-output-)
-- [Difference Between Hard Links and Symbolic Links (`ln -s`) 🔗](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#difference-between-hard-links-and-symbolic-links-)
+- [Difference Between Hard Links and Symbolic Links (`ln -s`) 🔗](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#difference-between-hard-links-and-symbolic-links-ln--s-)
 
 ## Features ✨
 
