@@ -2,6 +2,15 @@
 
 `Hardlink Sync` is a Bash script designed to create hard links between files in a source directory and a destination directory. The script ensures that files are synchronized by creating hard links where files are identical and skipping files that are already present and identical in the destination directory.
 
+## Table of Contents
+- [Features ✨](https://github.com/AT3K/UNIX-Scripts/#features-)
+- [Requirements 📦](https://github.com/AT3K/UNIX-Scripts/#requirements-)
+- [Permissions 🔐](https://github.com/AT3K/UNIX-Scripts/#permissions-)
+- [Usage 🚀](https://github.com/AT3K/UNIX-Scripts/#usage-)
+- [Configuration ⚙️](https://github.com/AT3K/UNIX-Scripts/#configuration-)
+- [Script Output 📄](https://github.com/AT3K/UNIX-Scripts/#script-output-)
+- [Difference Between Hard Links and Symbolic Links (`ln -s`) 🔗](https://github.com/AT3K/UNIX-Scripts/#difference-between-hard-links-and-symbolic-links-)
+
 ## Features ✨
 
 - **Hard Linking** 🔗: Creates hard links from a source directory to a destination directory.
@@ -68,7 +77,7 @@ SOURCE_DIR="/path/to/source"
 DEST_DIR="/path/to/destination"
 ```
 
-## Script Output
+## Script Output 📄
 
 ### When Hard Links Are Created:
 ```
@@ -97,3 +106,20 @@ DEST_DIR="/path/to/destination"
 
 🗂️ Total duplicate files skipped: 10
 ```
+
+## Difference Between Hard Links and Symbolic Links (`ln -s`) 🔗
+
+- **Hard Links**:
+  - Directly reference the same data as the original file.
+  - Both the original and hard link share the same inode and data.
+  - Only work within the same file system and cannot link directories.
+  - Data remains until all hard links are deleted.
+  - **Why use a hard link?**  
+    Hard links are useful when you want to create multiple references to the same data while ensuring the file remains accessible as long as at least one hard link exists. This is helpful when maintaining file consistency and saving space, as no new data is duplicated.
+
+- **Symbolic (Soft) Links** (`ln -s`):
+  - Point to the file's *path*, not the actual data.
+  - Can link across different file systems and can link directories.
+  - If the original file is deleted or moved, the symlink becomes broken.
+  - **Why use a symbolic link?**  
+    Symlinks are useful when you want a flexible link to a file or directory, even across different file systems. They act like shortcuts and are more versatile in pointing to files or directories that may change locations.
