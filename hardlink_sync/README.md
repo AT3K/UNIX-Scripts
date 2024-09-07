@@ -7,7 +7,7 @@
 - [Requirements 📦](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#requirements-)
 - [Permissions 🔐](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#permissions-)
 - [Usage 🚀](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#usage-)
-- [Configuration ⚙️](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#configuration-)
+- [Configuration ⚙️](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#configuration-%EF%B8%8F)
 - [Script Output 📄](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#script-output-)
 - [Difference Between Hard Links and Symbolic Links (`ln -s`) 🔗](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#difference-between-hard-links-and-symbolic-links-ln--s-)
 
