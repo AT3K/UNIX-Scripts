@@ -3,13 +3,13 @@
 `Hardlink Sync` is a Bash script designed to create hard links between files in a source directory and a destination directory. The script ensures that files are synchronized by creating hard links where files are identical and skipping files that are already present and identical in the destination directory.
 
 ## Table of Contents
-- [Features ✨](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#features-)
-- [Requirements 📦](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#requirements-)
-- [Permissions 🔐](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#permissions-)
-- [Usage 🚀](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#usage-)
-- [Configuration ⚙️](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#configuration-%EF%B8%8F)
-- [Script Output 📄](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#script-output-)
-- [Difference Between Hard Links and Symbolic Links (`ln -s`) 🔗](https://github.com/AT3K/UNIX-Scripts/tree/main/hardlink_sync#difference-between-hard-links-and-symbolic-links-ln--s-)
+- Features ✨
+- Requirements 📦
+- Permissions 🔐
+- Usage 🚀
+- Configuration ⚙️
+- Script Output 📄
+- Difference Between Hard Links and Symbolic Links (`ln -s`) 🔗
 
 ## Features ✨
 
